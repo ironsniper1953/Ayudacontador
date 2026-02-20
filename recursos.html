@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos y Herramientas | Ayudacontador</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .bg-midnight {
+            background-color: #1B263B;
+        }
+
+        .text-cyan-vivid {
+            color: #00B4D8;
+        }
+
+        .bg-cyan-vivid {
+            background-color: #00B4D8;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-midnight text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div
+                    class="w-10 h-10 bg-cyan-vivid rounded flex items-center justify-center font-bold text-xl text-midnight">
+                    A</div>
+                <span class="text-2xl font-bold tracking-tight">Ayuda<span
+                        class="text-cyan-vivid">contador</span></span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="index.html#inicio" class="hover:text-cyan-vivid transition">Inicio</a>
+                <a href="index.html#servicios" class="hover:text-cyan-vivid transition">Servicios</a>
+                <a href="recursos.html" class="text-cyan-vivid transition">Recursos</a>
+                <a href="index.html#contacto" class="hover:text-cyan-vivid transition">Contacto</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="https://wa.me/573224463578"
+                    class="hidden md:inline-block bg-cyan-vivid text-midnight px-5 py-2 rounded-full font-bold hover:bg-white transition">WhatsApp</a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-700">
+            <nav class="flex flex-col space-y-4 pt-4 text-center">
+                <a href="index.html#inicio" class="block hover:text-cyan-vivid transition py-2">Inicio</a>
+                <a href="index.html#servicios" class="block hover:text-cyan-vivid transition py-2">Servicios</a>
+                <a href="recursos.html" class="block text-cyan-vivid transition py-2">Recursos</a>
+                <a href="index.html#contacto" class="block hover:text-cyan-vivid transition py-2">Contacto</a>
+                <a href="https://wa.me/573224463578"
+                    class="inline-block bg-cyan-vivid text-midnight px-5 py-2 rounded-full font-bold hover:bg-white transition w-full">WhatsApp</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-12">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-midnight mb-4">Centro de <span
+                    class="text-cyan-vivid">Recursos</span></h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Herramientas esenciales, formatos descargables y enlaces
+                de interés para facilitar tu gestión contable y administrativa.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Sección Formatos Descargables -->
+            <section class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-cyan-vivid">
+                <div class="flex items-center mb-6">
+                    <div
+                        class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-cyan-vivid text-2xl mr-4">
+                        <i class="fas fa-file-download"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-midnight">Formatos Descargables</h2>
+                </div>
+                <p class="text-gray-600 mb-8">Accede a plantillas y documentos clave para tus trámites y organización
+                    interna.</p>
+
+                <ul class="space-y-4">
+                    <li
+                        class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition group">
+                        <div class="flex items-center">
+                            <i class="far fa-file-pdf text-red-500 text-xl mr-3 group-hover:scale-110 transition"></i>
+                            <span class="font-medium text-gray-700">Calendario Tributario 2026</span>
+                        </div>
+                        <a href="#"
+                            class="text-cyan-vivid hover:text-midnight font-bold text-sm bg-white px-4 py-2 rounded shadow-sm border border-gray-100 group-hover:shadow-md transition">Descargar
+                            <i class="fas fa-download ml-1"></i></a>
+                    </li>
+                    <li
+                        class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition group">
+                        <div class="flex items-center">
+                            <i
+                                class="far fa-file-excel text-green-600 text-xl mr-3 group-hover:scale-110 transition"></i>
+                            <span class="font-medium text-gray-700">Modelo Cuenta de Cobro</span>
+                        </div>
+                        <a href="#"
+                            class="text-cyan-vivid hover:text-midnight font-bold text-sm bg-white px-4 py-2 rounded shadow-sm border border-gray-100 group-hover:shadow-md transition">Descargar
+                            <i class="fas fa-download ml-1"></i></a>
+                    </li>
+                    <li
+                        class="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition group">
+                        <div class="flex items-center">
+                            <i class="far fa-file-word text-blue-600 text-xl mr-3 group-hover:scale-110 transition"></i>
+                            <span class="font-medium text-gray-700">Plantilla Carta Laboral</span>
+                        </div>
+                        <a href="#"
+                            class="text-cyan-vivid hover:text-midnight font-bold text-sm bg-white px-4 py-2 rounded shadow-sm border border-gray-100 group-hover:shadow-md transition">Descargar
+                            <i class="fas fa-download ml-1"></i></a>
+                    </li>
+                    <!-- Placeholder para futuros archivos -->
+                    <li class="text-center pt-2 text-sm text-gray-400 italic">Más recursos próximamente...</li>
+                </ul>
+            </section>
+
+            <!-- Sección Aplicaciones de Interés -->
+            <section class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-midnight">
+                <div class="flex items-center mb-6">
+                    <div
+                        class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-midnight text-2xl mr-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-midnight">Aplicaciones de Interés</h2>
+                </div>
+                <p class="text-gray-600 mb-8">Enlaces directos a plataformas gubernamentales y herramientas de
+                    productividad.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="https://www.dian.gov.co/" target="_blank"
+                        class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 hover:shadow-md transition group text-center border border-transparent hover:border-cyan-vivid">
+                        <i
+                            class="fas fa-landmark text-3xl text-gray-400 group-hover:text-cyan-vivid mb-3 transition"></i>
+                        <span class="font-bold text-gray-800">DIAN</span>
+                        <span class="text-xs text-gray-500 mt-1">Portal Transaccional</span>
+                    </a>
+                    <a href="https://www.ccb.org.co/" target="_blank"
+                        class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 hover:shadow-md transition group text-center border border-transparent hover:border-cyan-vivid">
+                        <i
+                            class="fas fa-building text-3xl text-gray-400 group-hover:text-cyan-vivid mb-3 transition"></i>
+                        <span class="font-bold text-gray-800">Cámara de Comercio</span>
+                        <span class="text-xs text-gray-500 mt-1">Trámites en línea</span>
+                    </a>
+                    <a href="https://www.minsalud.gov.co/" target="_blank"
+                        class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 hover:shadow-md transition group text-center border border-transparent hover:border-cyan-vivid">
+                        <i
+                            class="fas fa-heartbeat text-3xl text-gray-400 group-hover:text-cyan-vivid mb-3 transition"></i>
+                        <span class="font-bold text-gray-800">MinSalud / PILA</span>
+                        <span class="text-xs text-gray-500 mt-1">Seguridad Social</span>
+                    </a>
+                    <a href="#"
+                        class="flex flex-col items-center justify-center p-6 bg-gray-50 rounded-lg hover:bg-gray-100 hover:shadow-md transition group text-center border border-transparent hover:border-cyan-vivid">
+                        <i
+                            class="fas fa-calculator text-3xl text-gray-400 group-hover:text-cyan-vivid mb-3 transition"></i>
+                        <span class="font-bold text-gray-800">Calculadoras</span>
+                        <span class="text-xs text-gray-500 mt-1">Laboral y Tributaria</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-midnight text-white py-8 px-6 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center space-x-6 mb-6 text-2xl">
+                <a href="https://wa.me/573224463578" class="hover:text-cyan-vivid transition"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="#" class="hover:text-cyan-vivid transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-cyan-vivid transition"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2026 Ayudacontador | Juan David Bermeo Perdomo. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Close menu when clicking a link
+            menu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
